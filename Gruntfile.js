@@ -4,7 +4,7 @@
  *
  * Copyright (c) 2015 Rob Higgins
  * Licensed under the MIT license.
- */
+ *//* global module */
 
 'use strict';
 
@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     jshint: {
       all: [
         'Gruntfile.js',
-        'tasks/*.js',
+        'tasks/*.js'
       ],
       options: {
         jshintrc: '.jshintrc'
@@ -27,12 +27,12 @@ module.exports = function(grunt) {
 
     appcacher: {
       options: {
-        cache: "http://common/resource/",
+        cache: "http://common/resource/"
       },
       dev: {
         options: {
           out: "tmp/out_a.appcache"
-        },
+        }
       },
       production: {
         options: {
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
           src: ["**/*.html", "**/*.js", "**/*.css", "**/*.json", "**/*.png"]
         }]
       }
-    },
+    }
 
 
   });

@@ -4,7 +4,7 @@
  *
  * Copyright (c) 2015 Rob Higgins
  * Licensed under the MIT license.
- */
+ *//* global module */
 
 'use strict';
 
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
       "CACHE MANIFEST",
       "# timestamp: " + new Date(),
       "",
-      "CACHE:",
+      "CACHE:"
     ];
 
     var count = 0;
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
         }
       }).forEach(function(filepath) {
         count++;
-        src.push(filepath);
+        src.push("/" + filepath);
       });
 
     });
